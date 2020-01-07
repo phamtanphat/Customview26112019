@@ -57,4 +57,7 @@ public class EdittextRedPointWidget extends RelativeLayout {
         mTvLabel.setText(mTextLabel);
         mEditext.setHint(mHintEditext);
     }
+    public String getmTextLabel(){
+        return mTvLabel.getText().toString();
+    }
 }

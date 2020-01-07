@@ -11,10 +11,15 @@
     tools:context=".MainActivity">
 
   <com.example.customview26112019.EdittextRedPointWidget
+      android:id="@+id/edt"
       android:layout_width="match_parent"
-      app:text_Label="Project Name"
+      app:text_Label="Project "
       app:hint_editext="Intput name"
       android:layout_height="wrap_content"/>
 
 
+    <EditText
+        android:backgroundTint="@color/forcus_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </LinearLayout>
