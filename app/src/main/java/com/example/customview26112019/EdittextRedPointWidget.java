@@ -1,6 +1,7 @@
 package com.example.customview26112019;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +13,8 @@ public class EdittextRedPointWidget extends RelativeLayout {
 
     private TextView mTvLabel;
     private EditText mEditext;
+    private String mTextLabel;
+    private String mHintEditext;
 
     public EdittextRedPointWidget(Context context) {
         super(context);
@@ -43,8 +46,15 @@ public class EdittextRedPointWidget extends RelativeLayout {
     }
 
     private void loadAttrs(AttributeSet attrs) {
+        if (attrs != null){
+            TypedArray typedArray = getContext().obtainStyledAttributes(attrs,R.styleable.EdittextRedPointWidget);
+            mTextLabel  = typedArray.getString(R.styleable.EdittextRedPointWidget_text_Label);
+            mHintEditext  = typedArray.getString(R.styleable.EdittextRedPointWidget_hint_editext);
+        }
     }
 
     private void setUpview() {
+        mTvLabel.setText(mTextLabel);
+        mEditext.setHint(mHintEditext);
     }
 }
