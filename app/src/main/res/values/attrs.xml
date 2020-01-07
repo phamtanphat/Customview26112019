@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EdittextRedPointWidget">
+        <attr name="text_Label" format="string"/>
+        <attr name="hint_editext" format="string"/>
+    </declare-styleable>
+</resources>

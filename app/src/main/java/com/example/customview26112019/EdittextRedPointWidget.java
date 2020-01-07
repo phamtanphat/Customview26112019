@@ -4,9 +4,14 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 public class EdittextRedPointWidget extends RelativeLayout {
+
+    private TextView mTvLabel;
+    private EditText mEditext;
 
     public EdittextRedPointWidget(Context context) {
         super(context);
@@ -33,7 +38,8 @@ public class EdittextRedPointWidget extends RelativeLayout {
 
 
     private void mapview(View view) {
-
+        mEditext = view.findViewById(R.id.edittext);
+        mTvLabel = view.findViewById(R.id.tvLabel);
     }
 
     private void loadAttrs(AttributeSet attrs) {
