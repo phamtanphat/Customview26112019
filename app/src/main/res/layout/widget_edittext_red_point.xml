@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <LinearLayout
+        android:id="@+id/linearContainer"
         android:gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -23,5 +24,11 @@
             android:layout_width="10dp"
             android:layout_height="10dp"/>
     </LinearLayout>
-
+    <EditText
+        android:id="@+id/edittext"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/linearContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </RelativeLayout>
